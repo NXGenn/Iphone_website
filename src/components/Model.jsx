@@ -7,7 +7,9 @@ import ModelView from './ModelView'
 const Model = () => {
   const [size, setSize] =  useState('small');
   const [Model, setModel] = useState({
-    tittle: 'iphone 15 pro in Natural Titatinum ' 
+    tittle: 'iphone 15 pro in Natural Titatinum ',
+    color: ["#8F8A81", "#ffe7b9", "#6f6c64"],
+    img: yellowImg,
   })
   useGSAP(()=>{
     gsap.to('#heading', {y:0, opacity:1})
